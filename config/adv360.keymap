@@ -18,6 +18,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define HYP LS(LC(LA(LGUI)))
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -40,10 +42,10 @@
         default_layer {
             bindings = <
                &kp GRAVE    &kp N1   &kp N2       &kp N3        &kp N4  &kp N5                        &tog 1                                                                             &mo 3  &kp N6    &kp N7     &kp N8     &kp N9         &kp N0  &kp MINUS
-            &mt LGUI TAB     &kp Q    &kp W        &kp E         &kp R   &kp T                     &kp LG(C)                                                              &kp RG(LS(NUMBER_4))   &kp Y     &kp U      &kp I      &kp O          &kp P   &kp BSLH
+            &mt HYP TAB     &kp Q    &kp W        &kp E         &kp R   &kp T                     &kp LG(C)                                                              &kp RG(LS(NUMBER_4))   &kp Y     &kp U      &kp I      &kp O          &kp P   &kp BSLH
  &mt LEFT_CONTROL ESCAPE     &kp A    &kp S        &kp D         &kp F   &kp G                     &kp LG(V)  &kp LCTRL   &kp LALT   &none   &none   &kp RALT  &kp RCTRL  &kp LG(LS(NUMBER_5))   &kp H     &kp J      &kp K      &kp L       &kp SEMI    &kp SQT
-               &kp LSHFT     &kp Z    &kp X        &kp C         &kp V   &kp B                         &none      &none   &kp LGUI   &none   &none   &kp LGUI      &none                 &none   &kp N     &kp M  &kp COMMA    &kp DOT       &kp FSLH  &kp RSHFT
-                   &mo 2  &kp HOME  &kp END  &kp KP_PLUS  &kp KP_EQUAL                    &mt LGUI BACKSPACE   &kp LCMD  &kp LCTRL                  &kp RCTRL  &kp ENTER             &kp SPACE          &kp LBKT   &kp RBKT  &kp PG_UP  &kp PAGE_DOWN      &mo 2
+               &kp LSHFT     &kp Z    &kp X        &kp C         &kp V   &kp B                         &none      &none   &kp HYP   &none   &none   &kp HYP      &none                 &none   &kp N     &kp M  &kp COMMA    &kp DOT       &kp FSLH  &kp RSHFT
+                   &mo 2  &kp HOME  &kp END  &kp KP_PLUS  &kp KP_EQUAL                    &mt HYP BACKSPACE   &kp LCMD  &kp LCTRL                  &kp RCTRL  &kp ENTER             &kp SPACE          &kp LBKT   &kp RBKT  &kp PG_UP  &kp PAGE_DOWN      &mo 2
             >;
         };
 
