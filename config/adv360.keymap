@@ -18,6 +18,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define HYPER LS(LC(LA(LGUI)))
+
 / {
   behaviors {
     #include "macros.dtsi"
